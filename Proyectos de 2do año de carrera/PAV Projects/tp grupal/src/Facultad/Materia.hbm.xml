@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false">
+    <class name= "Facultad.Materia" table="materia" >
+    <id name="id" type="java.lang.Integer" >
+        <column name="id" />
+        <generator class="identity" />
+    </id>
+    <property name= "nombre" column="nombre" />
+     <property name= "nivel" column="nivel" />
+    <many-to-one column="profesorId" name="profesor" cascade="none"  />
+    <list name="alumnos" table="materia_alumno" cascade="none" >
+      <key column="id_materia" />
+      <list-index column="ORDEN" />
+      <many-to-many class="Facultad.Alumno" column="id_alumno" />
+    </list>
+    </class>
+</hibernate-mapping>
