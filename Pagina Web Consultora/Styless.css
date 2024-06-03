@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+
+}
+
+hr {
+    border: none;
+    /* Elimina el borde predeterminado */
+    height: 2px;
+    /* Establece la altura de la línea */
+    background-color: #FDC2C8;
+    /* Color de fondo de la línea */
+    margin: 20px 0;
+    /* Margen superior e inferior para separar de otros elementos */
+}
+
+.flex-box {
+    display: flex;
+}
+
+.content {
+    margin-top: 0px;
+    /* Ajusta el margen superior para evitar que el contenido quede detrás de la barra de navegación fija */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: fadeInDown 0.5s;
+
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Estilos de la barra de navegación */
+nav {
+
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #ddd;
+    width: 80%;
+    /* Barra de navegación ocupa el 80% del ancho de la pantalla */
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+
+
+}
+
+nav a {
+    color: #333;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 15%;
+    /* Efecto de transición de color al pasar el ratón */
+}
+
+nav a:hover {
+    background-color: #FEEBED;
+    color: #FDC2C8;
+
+}
+
+nav .flex-box {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+/* Estilos del logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    float: left;
+    padding: 10px;
+}
+
+.logo img {
+    height: 100%;
+    max-height: 60px;
+    margin: 0;
+}
+
+/* Estilos del menú desplegable */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    z-index: 3;
+
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+.dropdown .dropbtn:hover {
+    background-color: #FEEBED;
+    color: #FDC2C8;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+}
+
+.dropdown-content a {
+    float: none;
+    width: auto;
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 4;
+}
+
+.dropdown-content a:hover {
+    background-color: #FEEBED;
+    color: #FDC2C8;
+    min-width: 20px;
+    z-index: 4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 4;
+}
+
+.slider img {
+    padding-top: 20px;
+    max-width: 100%;
+    /* Establece un ancho máximo del 100% del contenedor */
+    max-height: 500px;
+    /* Establece un alto máximo, ajusta según tus necesidades */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+}
+
+.welcome {
+    margin: 5px;
+}
+
+h1 {
+    display: flex;
+    font-size: 2rem;
+    background-color: #AD88BF;
+    width: 40%;
+    height: 4rem;
+    text-decoration: underline;
+    color: #fff;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+h1:hover {
+    background-color: #BFA2CD;
+}
+
+.welcome p {
+    text-align: start;
+    font-size: 17px;
+    font-weight: 700;
+    color: #626262;
+    opacity: .7;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3%;
+
+}
+
+.css-button-sliding-to-bottom--rose {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    width: 20%;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-top: 3.5%;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #ff0a78;
+    color: #ff0a78;
+}
+
+.css-button-sliding-to-bottom--rose:hover {
+    color: #fff;
+}
+
+.css-button-sliding-to-bottom--rose:hover:after {
+    height: 100%;
+}
+
+.css-button-sliding-to-bottom--rose:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #ff0a78;
+}
+
+.proposito {
+    display: block;
+    padding-top: 25px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+    height: 25rem;
+    background-color: #97E3ED;
+}
+
+.proposito h2 {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    height: 4rem;
+    margin: auto;
+    font-size: 2em;
+    background-color: #30C6DB;
+    border-radius: 10px 100px / 120px;
+    box-shadow: 0px 0px 10px 0px #333;
+}
+
+.proposito .flex-box {
+    width: 80%;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.proposito .flex-box .logo {
+    max-width: 100%;
+    /* Asegura que el logo no supere el ancho del contenedor */
+    max-height: 100%;
+    /* Evita el espacio adicional debajo del logo */
+    margin: 0 auto;
+}
+
+.proposito .svg {
+    transition: transform 0.7s ease-in-out
+}
+
+.proposito:hover .svg {
+    transform: translateX(-30%) scale(1.5);
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+
+}
+
+
+.proposito .flex-box .txt {
+    font-size: 1.4rem;
+}
+
+.servicios {
+    display: flex;
+    height: 30.5em;
+    background-color: #AD88BF;
+    width: 100%;
+    margin-top: 2em;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.servicios h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    height: 4rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 2em;
+    background-color: #bd94d1;
+    border-radius: 10px 100px / 120px;
+    box-shadow: 0px 0px 10px 0px #333;
+}
+
+.servicios .tarjeta {
+    text-decoration: none;
+    display: flex;
+    color: white;
+    background-color: #56636B;
+    border: 3px solid #56636B;;
+    width: 40%;
+    height: 27%;
+    margin: 2%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    transition: color 2.5s;
+    font-size: 2em;
+    
+    
+}
+
+.servicios .tarjeta::before {
+    transition: font-size 0.7s ease;
+    content: attr(data-text);
+    color: #bd94d1;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    
+}
+
+
+.servicios .tarjeta:hover::before {
+    opacity: 1;
+    
+    
+}
+
+.servicios .tarjeta:hover {
+    color: transparent;
+    transition: color 0.0000001s;
+    background-color:#6e7f8a ;
+    font-size: 1em;
+    justify-content: start;
+    align-items: center;
+    white-space: pre-line;
+    
+
+}
+
+.testimonios {
+
+    background-color: #FED7DB;
+    height: 14em;
+    padding-top: 2.5%;
+}
+
+.testimonios h2 {
+
+    color: black;
+    font-size: 1.7em;
+    max-width: 30%;
+    max-height: 2.5em;
+    background-color: #FDC2C8;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px 100px / 120px;
+    box-shadow: 0px 0px 10px 0px #333;
+}
+
+.testimonios .flex-box {
+    justify-content: space-between;
+    padding-top: 1.5%;
+    margin: 0 auto;
+    max-width: 90%;
+    height: 90%;
+}
+
+.testimonio {
+    display: flex;
+    margin: auto;
+    width: 33%;
+    height: 90%;
+}
+
+.testimonio .imagen {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 35%;
+    height: 75%;
+
+}
+
+.testimonio .imagen svg {
+    width: 50%;
+    height: 50%;
+    transition: 0.5s
+}
+
+.testimonio:hover .imagen svg {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.testimonio .txt {
+    width: 65%;
+    height: 75%;
+    margin-left: 2%;
+    font-size: medium;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 15.5em;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+}
+
+
+
+.left {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    align-items: center;
+    /* Agrega esto para centrar verticalmente */
+
+    max-width: 800px;
+    /* Puedes ajustar según sea necesario */
+
+    flex-wrap: wrap;
+
+}
+
+.left .logo {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+    padding: 0;
+
+}
+
+.left .logo img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    /* Ajusta el tamaño automáticamente manteniendo la proporción */
+    height: auto;
+    /* Ajusta el tamaño automáticamente manteniendo la proporción */
+}
+
+.left .derechos {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+}
+
+.right {
+    margin: 2.5%;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    width: 55%;
+    height: 80%;
+}
+
+.right .siguenos {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: start;
+    flex-wrap: wrap;
+
+
+}
+
+.right a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+}
+
+.right a:hover {
+    color: #9B6DB0;
+}
+
+.right .info-contacto {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    justify-content: start;
+    flex-wrap: wrap;
+
+}
+
+.right .info-contacto ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+.right .info-contacto li {
+    margin-bottom: 7%;
+    display: flex;
+    align-items: center;
+}
+
+.contact {
+    max-width: 100%;
+    width: 100%;
+}
+
+.hContacto {
+    font-size: 2em;
+    margin-left: 2.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: 550;
+    font-family: Arial, sans-serif;
+    font-style: oblique;
+}
+
+.contactos {
+    display: flex;
+    width: 100%;
+    height: 30em;
+    max-width: 100%;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    color: #FDC2C8;
+}
+
+.contactos .empresa {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: #FDC2C8;
+    color: white;
+    transition: background-color 0.5s ease;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-right: 2.5px dashed black;
+    ;
+}
+
+.contactos .empresa:hover {
+    background-color: #30C6DB;
+    color: #333;
+}
+
+.contactos .persona {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: #FDC2C8;
+    color: white;
+    transition: background-color 0.5s ease;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-left: 2.5px dashed black;
+
+}
+
+.contactos .persona:hover {
+    background-color: #30C6DB;
+    color: #333;
+}
+
+.contactos h3 {
+    display: flex;
+    max-height: 10%;
+
+    font-size: 1.5em;
+    align-items: center;
+    padding: 1%;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 68px 68px 68px 68px;
+    -webkit-border-radius: 68px 68px 68px 68px;
+    -moz-border-radius: 68px 68px 68px 68px;
+
+    box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.71);
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.58);
+}
+
+.persona h4 {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.01s ease;
+    /* Transición suave de 0.3 segundos */
+}
+
+.persona:hover h4 {
+    opacity: 1;
+    transition: opacity 2s ease;
+    position: relative;
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 20%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDC2C8;
+    border-radius: 142px 142px 142px 0px;
+    -webkit-border-radius: 142px 142px 142px 0px;
+    -moz-border-radius: 142px 142px 142px 0px;
+    border: 2px dotted #000000;
+    box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contactos a {
+    color: white;
+}
+
+.contactos .Logo {
+    display: flex;
+    justify-content: center;
+    max-height: 50%;
+    max-width: auto;
+    width: 50%;
+    height: 30%;
+}
+
+.contactos .feather-mail {
+    transition: transform 0.7s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.contactos .feather-mail:hover {
+    transform: scale(1.5);
+    /* Puedes ajustar el valor según el grado de agrandamiento deseado */
+    stroke: black;
+    /* Cambia el color del trazo al pasar el cursor */
+}
+
+.contactos p {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+
+    font-size: 1.4em;
+    align-content: center;
+    align-items: center;
+    margin: 0.15%;
+}
+
+p span {
+    border-bottom: 1px dotted white;
+    /* Línea punteada de color negro */
+
+}
+
+.sobreMi {
+    display: flex;
+    width: 80%;
+    height: 40em;
+
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.sobreMi .derecha {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin-left: 5%;
+    background-color: #ddd;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border: 8px double #ad88bf;
+}
+
+.sobreMi .derecha img {
+    height: 100%;
+    width: 100%;
+}
+
+.sobreMi .izquierda {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-wrap: wrap;
+
+
+}
+
+.izquierda h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #30C6DB;
+    text-decoration: underline;
+    margin-left: 3%;
+}
+
+.izquierda p {
+    height: auto;
+    margin-top: 0.75%;
+    font-size: 1.1em;
+}
+
+.tarjetas {
+    display: flex;
+    width: 100%;
+    height: 20em;
+    margin-top: 2em;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.tarjetas .tarjeta {
+    display: flex;
+    color: white;
+    background-color: #82929B;
+    width: 30%;
+    height: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: color 1.5s, transform 0.5s;
+    font-size: 2em;
+}
+
+.tarjetas .tarjeta::before {
+    content: attr(data-text);
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+}
+
+
+.tarjetas .tarjeta:hover::before {
+    opacity: 1;
+
+}
+
+.tarjetas .tarjeta:hover {
+    color: transparent;
+    transition: color 0.05s, transform 0.05s;
+    font-size: 1em;
+    justify-content: start;
+    align-items: center;
+    white-space: pre-line;
+
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+
+}
+
+
+.atraccion{
+    display: flex;
+    width: 100%;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+h2{
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #30C6DB;
+    color: aliceblue;
+    margin: auto;
+    width: 20%;
+    border-radius: 20px;
+}
+
+ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+ol li {
+    counter-increment: item;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+ol li p{
+    font-weight:100;
+    font-size: 0.75em;
+}
+
+ol li::before {
+    content: counter(item); /* Usa el contador personalizado */
+    font-weight: bold;
+    color: white; /* Cambia el color del número */
+    background-color: rgb(24, 186, 24); /* Cambia el color del círculo */
+    border-radius: 50%; /* Hace que el círculo sea redondeado */
+    width: 40px; /* Ajusta el tamaño del círculo */
+    height: 40px; /* Ajusta el tamaño del círculo */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px; /* Espacio entre el círculo y el texto */
+}
+.warning{
+    display: flex;
+    width: 100%;
+    height: 5em;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5%;
+
+}
+.warning svg {
+    display: flex;
+    width: 15%;
+    height: auto;
+    color: #63D4E3;
+}
+.warning p {
+    display: flex;
+    width: 80%;
+}
