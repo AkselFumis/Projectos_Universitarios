@@ -1,0 +1,71 @@
+1.1	 Consigna
+Construcción de portal web responsivo optimizado para dispositivos móviles
+1.2	 Contexto
+Un cliente ha solicitado la construcción de un portal web para la venta de sus productos.
+1.3	 Maquetación
+Deberá maquetar las siguientes interfaces:
+• Portada del sitio web
+• Pantalla de Registro
+• Formulario de Login
+• Detalle de artículos
+• Secciones comunes:
+o Encabezado del sitio
+o Navegación del sitio
+o Pié de página o footer
+o Enlaces sociales
+Características de la maquetación:
+• La maquetación debe ser responsiva utilizando el Framework Bootstrap 5 y debe funcionar en resoluciones Pequeñas,
+medianas y grandes (Celular, Tablet y PC).
+• Portada del sitio:
+1. Slide destacados: Slide de fotos + titulo + descripción + precio + enlace a la sección correspondiente
+2. Productos destacados: Listará productos de mayor importancia con la siguiente información:
+§ Categoría
+§ Titulo
+§ Breve descripción
+§ Foto
+§ Precio
+§ Enlace a la sección correspondiente
+3. Banners y promociones
+• Login. El formulario deberá contener como mínimo:
+o Un checkbox para recordar contraseña
+o Un Input para introducir el nombre de usuario (email)
+o Un Input para introducir la contraseña
+o Un botón para ingresar
+o Un botón o enlace para recuperar contraseña. Al hacer clic en recuperar contraseña debe ocultarse el
+formulario de login y aparecer el formulario para recuperar contraseña en el mismo contenido abierto
+• Formulario de registro:
+2 TSTI :: UNIVERSIDAD TECNOLÓGICA NACIONAL . FACULTAD REGIONAL SANTA FE
+TE +54 (342) 460 1579 / 2390 - FAX 469 0348 / tsti.frsf.utn.edu.ar
+o Nombre
+o Apellido
+o DNI
+o Email
+o Fecha de nacimiento (Calendario)
+o País (lista desplegable)
+o Provincia (lista desplegable)
+o Un checkbox para aceptar términos y condiciones
+o Botón de registrarse.
+Al hacer submit del formulario se deben ejecutar validaciones y mostrar errores según el caso:
+• Se debe ser mayor de edad
+• Se deben aceptar términos y condiciones.
+• Detalle de producto: Se deja en el alumno el diseño y el alcance de dicha sección pero los requerimientos mínimos son:
+o Visualización de galería de fotos de productos
+o Productos relacionados
+o Opción de compra
+1.4	 Componentes
+Será requisito fundamental que el alumno implemente los siguientes componentes Bootstrap mínimos:
+• Tooltip
+• Slider
+• Modal
+• DropDown
+• Collapse
+1.5	 Exigencias	para	la	aprobación
+A los efectos de poder aprobar el trabajo, será requisito fundamental:
+• Sitio web responsive para Celular, Tablet y PC. Se validarán las 3 resoluciones
+• NO pueden utilizarse generadores de sitios web. La maquetación deberá ser realizada por el alumno
+• Entregar todo el código fuente del proyecto.
+• El trabajo práctico es individual
+• Se deberá personalizar el Theme Bootstrap. No puede utilizarse el theme por defecto. Se deberán aplicar reglas de
+estilos y colores propios para adecuar Bootstrap al diseño del sitio asi como también crear estilos propios.
+• Se valorará calidad y originalidad a la hora de puntuar.
+• Defensa del TP aprobada

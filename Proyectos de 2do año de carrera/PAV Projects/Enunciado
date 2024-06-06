@@ -1,0 +1,31 @@
+El alumno deberá entregar un archivo con extensión .zip, con el proyecto netbeans que contenga el código de las clases que se utilizaron para la realización del TP. Debe existir una clase con el método main para poder ejecutar todo el sistema y de ser necesario, un instructivo de como instalar y/o usar el mismo. Esto último resulta de importancia principalmente para el tema de la base de datos a utilizar. Solamente debe entregar uno de los integrantes del grupo.
+
+El objetivo del trabajo práctico es generar un sistema con interfaz swing para persistir una factura.
+
+Desarrollar el modelo de persistencia en Hibernate definiendo mínimamente las siguientes entidades y relaciones
+Definir una entidad Persona de la cual extiendan la entidad Vendedor y Cliente.
+Persona debe tener estas propiedades: Nombre, Apellido, Dirección, Edad
+Vendedor debe tener estas propiedades: CUIT, Porcentaje de Comisión
+Cliente debe contener Tipo y número de documento
+Un vendedor debe tener asociada la Ciudad donde reside como una entidad.
+Un artículo debe tener asociada una Marca. Además debe tener como mínimo un código, nombre, descripción, precio costo y precio venta
+Una factura debe contener:
+Numero, Fecha de emisión, Cliente, Vendedor y una lista de Artículos. Todos los datos son requeridos para crear una factura.
+Crear un formulario para la administración de Artículos:
+Listar todos los artículos.
+Agregar un nuevo artículo. Los datos requeridos son Nombre, Código, Precio y Marca (las marcas deben estar precargadas en la base de datos).
+Editar un artículo.
+        Crear un formulario para la administración de Vendedores:
+
+Listar todos los vendedores.
+Agregar un nuevo vendedor. Los datos requeridos son Nombre, CUIT y Ciudad (las ciudades deben estar precargadas en la base de datos).
+Editar un vendedor.
+        Crear un formulario para la administración de Clientes:
+
+Listar todos los clientes.
+Agregar un nuevo cliente. Los datos requeridos son Nombre, Apellido, tipo y numero de documento.
+Editar un cliente.
+        Crear un formulario para emitir facturas:
+
+Listar las facturas generadas.
+Agregar nuevas facturas las cuales deben tener ingresado todos los datos y al menos un articulo.
